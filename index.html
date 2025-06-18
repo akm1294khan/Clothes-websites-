@@ -1,0 +1,183 @@
+06.17 22:58
+Web clothes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Garments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+        .welcome-text {
+            /* Changed font-family to Arial for a standard, non-stylish look */
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 50px;
+            color: #c2185b; /* A slightly darker, pleasing rose color */
+            margin-bottom: 20px;
+        }
+        .product-container {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .details-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .details-button:hover {
+            background-color: #45a049;
+        }
+        .details-section {
+            margin-top: 20px;
+            font-size: 16px;
+            display: none; /* Hidden by default */
+        }
+        .details-section p {
+            margin: 5px 0;
+        }
+        .contact-button {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove underline from link */
+        }
+        .contact-button:hover {
+            background-color: #1DA851;
+        }
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <img src="10.jpg" alt="Product Image 3" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details3')">Details</button>
+        <div class="details-section" id="details3">
+            <p>Stylish formal blazer, a must-have for your professional wardrobe.</p>
+            <p>Perfect for business meetings or formal events. Tailored fit.</p>
+            <p>Available in classic black, navy, and grey.</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="100.jpg" alt="Product Image 4" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details4')">Details</button>
+        <div class="details-section" id="details4">
+            <p>Warm and cozy knitted sweater, perfect for the winter season.</p>
+            <p>Soft texture and comfortable fit. Available in various patterns.</p>
+            <p>Stay warm and stylish this season with our new collection.</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="5.jpg" alt="Product Image 5" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details5')">Details</button>
+        <div class="details-section" id="details5">
+            <p>Trendy denim jeans, designed for both comfort and style.</p>
+            <p>Durable fabric, suitable for everyday wear. Different washes available.</p>
+            <p>Find your perfect fit from our wide range of sizes.</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="6.jpg" alt="Product Image 6" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details6')">Details</button>
+        <div class="details-section" id="details6">
+            <p>Light and breezy summer top, ideal for warm weather.</p>
+            <p>Features a beautiful floral pattern. Perfect for your holiday wardrobe.</p>
+            <p>Stay cool and fashionable with this must-have item.</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="7.jpg" alt="Product Image 7" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details7')">Details</button>
+        <div class="details-section" id="details7">
+            <p>High-performance activewear leggings for your fitness routine.</p>
+            <p>Stretchable and breathable fabric ensures maximum comfort during workouts.</p>
+            <p>Designed for all types of exercise. Get yours now!</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="8.jpg" alt="Product Image 8" class="product-image">
+        <button class="details-button" onclick="toggleDetails('details8')">Details</button>
+        <div class="details-section" id="details8">
+            <p>Versatile and elegant skirt, perfect for both casual and formal settings.</p>
+            <p>Comfortable fit with a chic design. Available in multiple colors.</p>
+            <p>A great addition to any wardrobe, easy to pair with various tops.</p>
+            <a href="https://wa.me/923010692773" class="contact-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(detailsId) {
+            var detailsSection = document.getElementById(detailsId);
+            if (detailsSection.style.display === "none") {
+                detailsSection.style.display = "block";
+            } else {
+                detailsSection.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
